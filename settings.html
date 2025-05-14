@@ -1,0 +1,101 @@
+<!--
+    SETTINGS PAGE | RS PROJECT
+-->
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="settingsTitle">الإعدادات</title>
+    <link rel="stylesheet" href="../style/dashboardStyle.css" />
+    <link rel="stylesheet" href="../style/settingsStyle.css" />
+    <link rel="stylesheet" href="../style/sidebarStyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <div class="sidebar" id="sidebar">
+        <h2 data-i18n="dashboardTitle">لوحة التحكم</h2>
+        <ul>
+            <li><a href="../dashboard.html"><i class="fas fa-home"></i> <span data-i18n="home">الرئيسية</span></a></li>
+            <li><a href="users.html"><i class="fas fa-users"></i> <span data-i18n="users">المستخدمين</span></a></li>
+            <li><a href="stats.html"><i class="fas fa-chart-bar"></i> <span data-i18n="stats">الإحصائيات</span></a></li>
+            <li><a href="#"><i class="fas fa-cog"></i> <span data-i18n="settings">الإعدادات</span></a></li>
+            <li><a href="logout.html"><i class="fas fa-sign-out-alt"></i> <span data-i18n="logout">تسجيل
+                        الخروج</span></a></li>
+        </ul>
+        <div class="toggle-btn" id="toggleSidebar">☰</div>
+    </div>
+
+    <div class="main-content">
+        <h1 data-i18n="settingsSectionTitle">قسم الإعدادات</h1>
+        <hr>
+        <p style="text-align: center" data-i18n="settingsHint">يمكنك تعديل الإعدادات العامة هنا.</p>
+
+        <!-- إعدادات الحساب -->
+        <form class="settings-form">
+            <h3 data-i18n="accountSettings">إعدادات الحساب</h3>
+            <label data-i18n="name">الاسم:</label>
+            <input type="text" placeholder="اسم المستخدم" data-i18n="namePlaceholder" data-i18n-target="placeholder">
+
+            <label data-i18n="email">البريد الإلكتروني:</label>
+            <input type="email" placeholder="example@email.com">
+
+            <label data-i18n="password">كلمة المرور:</label>
+            <input type="password" placeholder="********">
+
+            <button type="submit" data-i18n="saveChanges">💾 حفظ التغييرات</button>
+        </form>
+
+        <!-- إعدادات الواجهة -->
+        <div class="settings-section">
+            <h3 data-i18n="uiOptions">خيارات الواجهة</h3>
+            <label><input type="checkbox" id="darkModeToggle"> <span data-i18n="enableDarkMode">تفعيل الوضع
+                    الداكن</span></label>
+            <label>
+                <span data-i18n="language">اللغة:</span>
+                <select id="languageSelect">
+                    <option value="ar">العربية</option>
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="es">Español</option>
+                </select>
+            </label>
+            <label for="sidebarPosition" data-i18n="sidebarPosition">موقع القائمة الجانبية:</label>
+            <select id="sidebarPosition">
+                <option value="right" data-i18n="right">يمين</option>
+                <option value="left" data-i18n="left">يسار</option>
+            </select>
+
+            <button id="saveSettings" data-i18n="saveChanges">💾 حفظ التغييرات</button>
+        </div>
+
+        <!-- إعدادات الإشعارات -->
+        <!-- قسم خاص للتعطيل عند مرور الماوس -->
+        <div class="hover-disable-wrapper">
+
+            <!-- إعدادات الإشعارات -->
+            <div class="settings-section">
+                <h3 data-i18n="notifications">الإشعارات</h3>
+                <label><input type="checkbox" checked> <span data-i18n="emailNotifications">إشعارات البريد
+                        الإلكتروني</span></label>
+                <label><input type="checkbox"> <span data-i18n="systemNotifications">إشعارات النظام</span></label>
+            </div>
+
+            <!-- زر إعادة الضبط -->
+            <div class="settings-section">
+                <button class="reset-btn" data-i18n="resetSettings">🔄 إعادة ضبط الإعدادات الافتراضية</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../script/languageLoader.js"></script>
+    <script src="../script/settingsLoader.js"></script>
+    <script src="../script/dashScript.js"></script>
+</body>
+
+</html>

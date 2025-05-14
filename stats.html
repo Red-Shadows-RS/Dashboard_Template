@@ -1,0 +1,76 @@
+<!--
+    DASHBOARD STATS PAGE | RS PROJECT
+-->
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="statsTitle">الإحصائيات</title>
+    <link rel="stylesheet" href="../style/dashboardStyle.css" />
+    <link rel="stylesheet" href="../style/statsStyle.css" />
+    <link rel="stylesheet" href="../style/sidebarStyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <div class="sidebar" id="sidebar">
+        <h2 data-i18n="dashboardTitle">لوحة التحكم</h2>
+        <ul>
+            <li><a href="../dashboard.html"><i class="fas fa-home"></i> <span data-i18n="home">الرئيسية</span></a></li>
+            <li><a href="users.html"><i class="fas fa-users"></i> <span data-i18n="users">المستخدمين</span></a></li>
+            <li><a href="#"><i class="fas fa-chart-bar"></i> <span data-i18n="stats">الإحصائيات</span></a></li>
+            <li><a href="settings.html"><i class="fas fa-cog"></i> <span data-i18n="settings">الإعدادات</span></a></li>
+            <li><a href="logout.html"><i class="fas fa-sign-out-alt"></i> <span data-i18n="logout">تسجيل
+                        الخروج</span></a></li>
+        </ul>
+        <div class="toggle-btn" id="toggleSidebar">☰</div>
+    </div>
+
+    <div class="main-content">
+        <h1 data-i18n="stats_section_title">قسم الإحصائيات</h1>
+        <hr>
+        <p style="text-align: center;"data-i18n="stats_section_desc">هنا يمكنك عرض تقارير الأداء والمقاييس المختلفة.</h>
+        <div class="stat-container">
+            <div class="stat-box">
+                <h3 data-i18n="stat_total_users">إجمالي المستخدمين</h3>
+                <p>1500</p>
+            </div>
+            <div class="stat-box">
+                <h3 data-i18n="stat_active_users">المستخدمين النشطين</h3>
+                <p>1200</p>
+            </div>
+            <div class="stat-box">
+                <h3 data-i18n="stat_banned_users">المستخدمين المحظورين</h3>
+                <p>300</p>
+            </div>
+        </div>
+
+        <div class="charts-section">
+            <div class="chart-bar">
+                <div class="chart-label" data-i18n="chart_admins">مشرفين</div>
+                <div class="chart-fill bar-admin">80%</div>
+            </div>
+            <div class="chart-bar">
+                <div class="chart-label" data-i18n="chart_members">أعضاء</div>
+                <div class="chart-fill bar-members">60%</div>
+            </div>
+            <div class="chart-bar">
+                <div class="chart-label" data-i18n="chart_banned">محظورين</div>
+                <div class="chart-fill bar-banned">40%</div>
+            </div>
+            <div class="chart-bar">
+                <div class="chart-label" data-i18n="chart_visitors">زوار اليوم</div>
+                <div class="chart-fill bar-visitors">50%</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script/languageLoader.js"></script>
+    <script src="../script/settingsLoader.js"></script>
+    <script src="../script/dashScript.js"></script>
+</body>
+</html>

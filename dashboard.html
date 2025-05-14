@@ -1,0 +1,56 @@
+<!--
+  DASHBOARD | RS PROJECT
+-->
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="dashboardTitle">لوحة التحكم</title>
+  <link rel="stylesheet" href="style/cardStyle.css" />
+  <link rel="stylesheet" href="style/dashboardStyle.css" />
+  <link rel="stylesheet" href="style/sidebarStyle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  
+  <div class="sidebar" id="sidebar">
+    <h2 data-i18n="dashboardTitle">لوحة التحكم</h2>
+    <ul>
+      <li><a href="#"><i class="fas fa-home"></i> <span data-i18n="home">الرئيسية</span></a></li>
+      <li><a href="pages/users.html"><i class="fas fa-users"></i> <span data-i18n="users">المستخدمين</span></a></li>
+      <li><a href="pages/stats.html"><i class="fas fa-chart-bar"></i> <span data-i18n="stats">الإحصائيات</span></a></li>
+      <li><a href="pages/settings.html"><i class="fas fa-cog"></i> <span data-i18n="settings">الإعدادات</span></a></li>
+      <li><a href="pages/logout.html"><i class="fas fa-sign-out-alt"></i> <span data-i18n="logout">تسجيل الخروج</span></a></li>
+    </ul>
+    <div class="toggle-btn" id="toggleSidebar">☰</div>
+  </div>
+
+  <div class="main-content">
+    <h1 data-i18n="dashboardPanelTitle">مرحباً بك في لوحة التحكم</h1>
+    <hr>
+    <p style="text-align: center;" data-i18n="dashboardPanelDesc">هنا يمكنك إدارة المستخدمين، عرض الإحصائيات، وضبط الإعدادات.</p>
+    <div class="cards-container">
+      <div class="card" onclick="location.href='pages/users.html'">
+        <i class="fas fa-users"></i>
+        <div class="card-title" data-i18n="users">المستخدمين</div>
+      </div>
+
+      <div class="card" onclick="location.href='pages/stats.html'">
+        <i class="fas fa-chart-bar"></i>
+        <div class="card-title" data-i18n="stats">الإحصائيات</div>
+      </div>
+
+      <div class="card" onclick="location.href='pages/settings.html'">
+        <i class="fas fa-cog"></i>
+        <div class="card-title" data-i18n="settings">الإعدادات</div>
+      </div>
+    </div>
+  </div>
+  <script src="script/languageLoader.js"></script>
+  <script src="script/settingsLoader.js"></script>
+  <script src="script/dashScript.js"></script>
+</body>
+</html>

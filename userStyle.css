@@ -1,0 +1,28 @@
+/* user | RS PROJECT */
+
+.user-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .user-table th, .user-table td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .user-table th {
+      background-color: #34495e;
+      color: white;
+    }
+
+    .status-active {
+      color: green;
+      font-weight: bold;
+    }
+
+    .status-banned {
+      color: red;
+      font-weight: bold;
+    }

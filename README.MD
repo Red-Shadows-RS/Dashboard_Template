@@ -14,7 +14,7 @@ A clean and modular dashboard template designed to be **embedded into any projec
 1. 📦 Clone or download the repository  
 2. 📁 Make sure the following files/folders are in place:  
    - `dashboard.html`  
-   - `style/cardStyle.css`, `style/global.css`, etc.  
+   - `style/cardStyle.css`, `style/dashboardStyle.css`, etc.  
    - `script/dashScript.js`  
 3. 🚀 Open `dashboard.html` in a browser to test locally  
 4. 🔌 Integrate your backend or storage solution for user data, stats, etc.

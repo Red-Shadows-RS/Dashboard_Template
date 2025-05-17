@@ -16,7 +16,13 @@
 <body>
     <div class="main-content" style="text-align: center; margin-top: 100px;">
         <h1 data-i18n="logoutSuccess">تم تسجيل الخروج بنجاح</h1>
-        <a href="../dashboard.html">العودة إلى الرئيسية</a>
+         <i class="fas fa-check-circle"></i>
+            <p data-i18n="logoutHint">لقد تم تسجيل خروجك من النظام. يمكنك العودة إلى لوحة التحكم.</p>
+          
+    </div>
+    <div class="dash-redirect">
+            <i class="fas fa-arrow-left"></i>
+            <a onclick="location.href='../dashboard.html'" data-i18n="dashRedirect">العودة إلى لوحة التحكم</p></a>
     </div>
 
     <script src="../script/languageLoader.js"></script>

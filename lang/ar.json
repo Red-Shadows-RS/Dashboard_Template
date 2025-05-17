@@ -6,6 +6,8 @@
   "logoutTitle": "تسجيل الخروج",
   "dashboardPanelTitle": "مرحباً بك في لوحة التحكم",
   "dashboardPanelDesc": "هنا يمكنك إدارة جميع جوانب النظام.",
+  "dashRedirect": "العودة إلى لوحة التحكم",
+  "logoutHint": "لقد تم تسجيل خروجك من النظام. يمكنك العودة إلى لوحة التحكم",
   "home": "الرئيسية",
   "users": "المستخدمين",
   "stats": "الإحصائيات",
@@ -26,8 +28,8 @@
   "enableDarkMode": "تفعيل الوضع الداكن",
   "language": "اللغة:",
   "sidebarPosition": "موقع القائمة الجانبية:",
-  "right": "يمين",
-  "left": "يسار",
+  "right": "يسار",
+  "left": "يمين",
   "notifications": "الإشعارات",
   "emailNotifications": "إشعارات البريد الإلكتروني",
   "systemNotifications": "إشعارات النظام",
@@ -52,5 +54,4 @@
   "modAction_nameChange": "تغيير الاسم",
   "modAction_emailChange": "تغيير البريد الإلكتروني",
   "modAction_roleChange": "تغيير الدور"
-  
 }

@@ -53,5 +53,12 @@
   "modAction_Manager": "تعديل معلومات المستخدم",
   "modAction_nameChange": "تغيير الاسم",
   "modAction_emailChange": "تغيير البريد الإلكتروني",
-  "modAction_roleChange": "تغيير الدور"
+  "modAction_roleChange": "تغيير الدور",
+  "role_manager": "مدير",
+  "role_moderator": "مشرف",
+  "role_user": "مستخدم",
+  "role_developer": "مطور",
+  "role_editor": "محرر",
+  "saveEditBtn": "حفظ",
+  "cancelEditBtn": "إلغاء"
 }

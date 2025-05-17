@@ -17,6 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
           } else {
             el.innerHTML = translations[key];
           }
+
+          if (target === "value") {
+            el.value = translations[key];
+          } else {
+            el.innerHTML = translations[key];
+          }
         }
       });
 

@@ -53,5 +53,12 @@
   "modAction_Manager": "User Information Edit",
   "modAction_nameChange": "Name Change",
   "modAction_emailChange": "Email Change",
-  "modAction_roleChange": "Role Change"
+  "modAction_roleChange": "Role Change",
+  "role_manager": "Admin",
+  "role_moderator": "Moderator",
+  "role_user": "User",
+  "role_developer": "Developer",
+  "role_editor": "Editor",
+  "saveEditBtn": "Save",
+  "cancelEditBtn": "Cancel"
 }

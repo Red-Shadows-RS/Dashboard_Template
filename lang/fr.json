@@ -53,5 +53,12 @@
 "modAction_Manager": "Modifier les informations de l'utilisateur",
 "modAction_nameChange": "Changement de nom",
 "modAction_emailChange": "Changement d'e-mail",
-"modAction_roleChange": "Changement de rôle"
+"modAction_roleChange": "Changement de rôle",
+"role_manager": "Administrateur",
+"role_moderator": "Modérateur",
+"role_user": "Utilisateur",
+"role_developer": "Développeur",
+"role_editor": "Éditeur",
+"saveEditBtn": "Enregistrer",
+"cancelEditBtn": "Annuler"
 }

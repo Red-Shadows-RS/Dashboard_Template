@@ -52,14 +52,23 @@
     <h2 style="color: black" data-i18n="modAction_Manager">تعديل معلومات المستخدم</h2>
     <input type="text" id="editName" placeholder="الاسم" data-i18n="modAction_nameChange" data-i18n-target="placeholder" />
     <input type="email" id="editEmail" placeholder="البريد الإلكتروني" data-i18n="modAction_emailChange" data-i18n-target="placeholder" />
-    <input type="text" id="editRole" placeholder="الدور" data-i18n="modAction_roleChange" data-i18n-target="placeholder" />
+    
+    <select id="editRole">
+      <option value="مدير" data-i18n="role_manager" data-i18n-target="value">مدير</option>
+      <option value="ادمن" data-i18n="role_admin" data-i18n-target="value">ادمن</option>
+      <option value="مطور" data-i18n="role_developer" data-i18n-target="value">مطور</option>
+      <option value="مشرف" data-i18n="role_moderator" data-i18n-target="value">مشرف</option>  
+      <option value="محرر" data-i18n="role_editor" data-i18n-target="value">محرر</option>
+      <option value="مستخدم" data-i18n="role_user" data-i18n-target="value">مستخدم</option>
+    </select>
 
     <select id="editStatus">
       <option value="نشط" data-i18n="status_active">نشط</option>
       <option value="محظور" data-i18n="status_banned">محظور</option>
     </select>
-    <button id="saveEdit">حفظ</button>
-    <button id="cancelEdit">إلغاء</button>
+      
+    <button id="saveEdit" data-i18n="saveEditBtn">حفظ</button>
+    <button id="cancelEdit" data-i18n="cancelEditBtn">إلغاء</button>
   </div>
 </div>
 

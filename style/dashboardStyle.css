@@ -44,11 +44,18 @@ body.dark table {
 }
 
 body.sidebar-expanded.sidebar-left .main-content {
-  transform: translateX(250px); /* تحريك المحتوى إلى اليسار */
-  transition: transform 2s ease; /* الانتقال بشكل سلس */
+  transform: translateX(250px); 
+  transition: transform 2s ease; 
 }
 
 .hover-disable-wrapper:hover {
   pointer-events: none;
   opacity: 0.6;
+}
+
+.dash-redirect {
+  background-color: #505050;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
 }

@@ -59,6 +59,7 @@
 "role_user": "Utilisateur",
 "role_developer": "Développeur",
 "role_editor": "Éditeur",
+"role_admin": "Administrateur",
 "saveEditBtn": "Enregistrer",
 "cancelEditBtn": "Annuler"
 }

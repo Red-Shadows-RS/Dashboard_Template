@@ -59,6 +59,7 @@
   "role_user": "مستخدم",
   "role_developer": "مطور",
   "role_editor": "محرر",
+  "role_admin": "ادمن",
   "saveEditBtn": "حفظ",
   "cancelEditBtn": "إلغاء"
 }

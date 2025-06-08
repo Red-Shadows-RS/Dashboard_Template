@@ -13,6 +13,7 @@ body {
   padding: 40px;
   transition: margin-left 1.0s ease;
   margin-left: 0;
+  border-radius: 2%;
 }
 
 .main-content h1 {
@@ -20,32 +21,13 @@ body {
   text-align: center;
 }
 
-body.dark {
-  background-color: #1e1e1e;
-  color: #fff;
-}
-
-body.dark .main-content {
-  background-color: #2c2c2c;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-body.dark table {
-  background-color: #333;
-  color: white;
-}
-
 .sidebar.expanded {
   width: 200px;
 }
 
 body.sidebar-expanded.sidebar-left .main-content {
-  transform: translateX(250px); 
-  transition: transform 2s ease; 
+  transform: translateX(250px);
+  transition: transform 2s ease;
 }
 
 .hover-disable-wrapper:hover {

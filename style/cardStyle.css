@@ -35,17 +35,3 @@
   font-size: 18px;
   font-weight: bold;
 }
-
-body.dark .card {
-  background-color: #444242;
-  color: #fff;
-}
-
-body.dark .card:hover {
-  background-color: #3a3a3a;
-}
-
-body.dark .card i {
-  color: #fff;
-}
-

@@ -51,29 +51,3 @@ button.reset-btn {
 .main-content p {
   margin-bottom: 20px;
 }
-
-body.dark .settings-section,
-body.dark .settings-form {
-  background: #4e4e4e;
-  color: #fff;
-}
-
-body.dark .settings-form label,
-body.dark .settings-section label {
-  color: #ddd;
-}
-
-body.dark .settings-form input,
-body.dark .settings-section select {
-  background-color: #444;
-  color: #fff;
-  border: 1px solid #666;
-}
-
-body.dark button {
-  background-color: #388e3c;
-}
-
-body.dark button.reset-btn {
-  background-color: #c62828;
-}

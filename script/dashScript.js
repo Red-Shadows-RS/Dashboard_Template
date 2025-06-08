@@ -1,7 +1,6 @@
 // DASHBOARD | RS PROJECT
 // This script handles the sidebar toggle, user management, dark mode, language selection, and sidebar position settings.
 
-
 const toggleBtn = document.getElementById('toggleSidebar');
 const sidebar = document.getElementById('sidebar');
 const body = document.body;
@@ -118,9 +117,11 @@ languageSelect.addEventListener('change', () => {
 });
 
 const sidebarPosition = document.getElementById('sidebarPosition');
-sidebarPosition.value = localStorage.getItem('sidebarPosition') || 'left'; 
+const savedPosition = localStorage.getItem('sidebarPosition') || 'right';
 
-if (localStorage.getItem('sidebarPosition') === 'right') {
+sidebarPosition.value = savedPosition;
+
+if (savedPosition === 'left') {
   document.body.classList.add('sidebar-left'); 
 } else {
   document.body.classList.remove('sidebar-left'); 
@@ -128,15 +129,14 @@ if (localStorage.getItem('sidebarPosition') === 'right') {
 
 sidebarPosition.addEventListener('change', () => {
   const position = sidebarPosition.value;
-  localStorage.setItem('sidebarPosition', position); 
-  
-  if (position === 'right') {
-    document.body.classList.add('sidebar-left'); 
+  localStorage.setItem('sidebarPosition', position);
+
+  if (position === 'left') {
+    document.body.classList.add('sidebar-left');
   } else {
-    document.body.classList.remove('sidebar-left'); 
+    document.body.classList.remove('sidebar-left');
   }
 });
-
 
 const saveSettingsButton = document.getElementById('saveSettings');
 saveSettingsButton.addEventListener('click', () => {
@@ -154,9 +154,8 @@ saveSettingsButton.addEventListener('click', () => {
       message = 'Paramètres enregistrés avec succès';
       break;
     default:
-      message = 'تم حفظ الإعدادات'; // Arabic as default
+      message = 'تم حفظ الإعدادات'; 
   }
 
   alert(message);
 });
-

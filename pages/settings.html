@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../style/dashboardStyle.css" />
     <link rel="stylesheet" href="../style/settingsStyle.css" />
     <link rel="stylesheet" href="../style/sidebarStyle.css" />
+    <link rel="stylesheet" href="../style/darkModeStyle.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
@@ -35,7 +36,6 @@
         <hr>
         <p style="text-align: center" data-i18n="settingsHint">يمكنك تعديل الإعدادات العامة هنا.</p>
 
-        <!-- إعدادات الحساب -->
         <form class="settings-form">
             <h3 data-i18n="accountSettings">إعدادات الحساب</h3>
             <label data-i18n="name">الاسم:</label>
@@ -50,7 +50,6 @@
             <button type="submit" data-i18n="saveChanges">💾 حفظ التغييرات</button>
         </form>
 
-        <!-- إعدادات الواجهة -->
         <div class="settings-section">
             <h3 data-i18n="uiOptions">خيارات الواجهة</h3>
             <label><input type="checkbox" id="darkModeToggle"> <span data-i18n="enableDarkMode">تفعيل الوضع
@@ -66,18 +65,15 @@
             </label>
             <label for="sidebarPosition" data-i18n="sidebarPosition">موقع القائمة الجانبية:</label>
             <select id="sidebarPosition">
-                <option value="right" data-i18n="right">يسار</option>
-                <option value="left" data-i18n="left">يمين</option>
+                <option value="right" data-i18n="right">يمين</option>
+                <option value="left" data-i18n="left">يسار</option>
             </select>
 
             <button id="saveSettings" data-i18n="saveChanges">💾 حفظ التغييرات</button>
         </div>
 
-        <!-- إعدادات الإشعارات -->
-        <!-- قسم خاص للتعطيل عند مرور الماوس -->
         <div class="hover-disable-wrapper">
 
-            <!-- إعدادات الإشعارات -->
             <div class="settings-section">
                 <h3 data-i18n="notifications">الإشعارات</h3>
                 <label><input type="checkbox" checked> <span data-i18n="emailNotifications">إشعارات البريد
@@ -85,16 +81,17 @@
                 <label><input type="checkbox"> <span data-i18n="systemNotifications">إشعارات النظام</span></label>
             </div>
 
-            <!-- زر إعادة الضبط -->
-            <div class="settings-section">
-                <button class="reset-btn" data-i18n="resetSettings">🔄 إعادة ضبط الإعدادات الافتراضية</button>
-            </div>
-
         </div>
+
+        <div class="settings-section">
+            <button class="reset-btn" data-i18n="resetSettings">🔄 إعادة ضبط الإعدادات الافتراضية</button>
+        </div>
+
     </div>
 
     <script src="../script/languageLoader.js"></script>
     <script src="../script/settingsLoader.js"></script>
+    <script src="../script/resetSettings.js"></script>
     <script src="../script/dashScript.js"></script>
 </body>
 
